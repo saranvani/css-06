@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+}
+
+body {
+    background-image: url(shara.jpg);
+}
+
+.container1 {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    height: 0px;
+}
+
+.cma {
+    width: 50px;
+    margin: 20px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 50px;
+    font-size: 13px;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu {
+    width: 30px;
+    margin-right: 70px;
+}
+
+.container2 {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+}
+
+.containbox1 {
+    text-align: left;
+}
+
+.text {
+    position: relative;
+    top: 200px;
+    left: 50px;
+    color: white;
+}
+
+.text h1 {
+    font-size: 80px;
+}
+
+.text p {
+    line-height: 25px;
+}
+
+.btn {
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    border-style: none;
+}
+
+.containbox2 {
+    display: grid;
+    grid-template-columns: repeat(2, 230px);
+    grid-template-rows: 260px 260px;
+    column-gap: 20px;
+    row-gap: 30px;
+    position: relative;
+    left: 240px;
+}
+.containbox2 h5,p{
+    color: white;
+    line-height: 25px;
+    margin-left: 20px;
+}
+.pic1, .pic2, .pic3, .pic4{
+    border-radius: 10px;
+}
+.pic1{
+    background-image: url(pic-1.png);
+    background-size: cover;
+}
+.pic1:hover, .pic2:hover, .pic3:hover, .pic4:hover{
+    transform: translateY(-15px);
+}
+.pic2{
+    background-image: url(pic-2.png);
+    background-size: cover;
+}
+.pic3{
+    background-image: url(pic-3.png);
+    background-size: cover;
+}
+.pic4{
+    background-image: url(pic-4.png);
+    background-size: cover;
+}
+
+@media screen and (max-width: 880px) {
+    body{
+        width: 100vw;
+    }
+    .container1 {
+        display: flex;
+        align-items: center;
+        padding: 0px;
+        height: 0px;
+    }
+
+    .cma {
+        width: 20px;
+        margin-top: 60px;
+    }
+
+    nav {
+        text-align: left;
+        margin-top: 25px;
+        position: relative;
+        left: 100px;
+    }
+
+    nav li {
+        margin-right: 5px;
+        font-size: 5px;
+    }
+
+    .menu {
+        width: 15px;
+        position: absolute;
+        left: 245px;
+        top: 8px;
+    }
+
+    .text {
+        top: 8px;
+        left: 0px;
+    }
+
+    .text h1 {
+        font-size: 15px;
+    }
+
+    .text p {
+        line-height: 10px;
+        font-size: 7px;
+    }
+
+    .btn {
+        width: 80px;
+        height: 15px;
+        margin-top: 10px;
+        font-size: 5px;
+    }
+    .containbox2{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        position: absolute;
+        top: 110px;
+        left: 50px;
+    }
+    .container2 img{
+        width: 180px;
+        height: 100px;
+        border-radius: 10px;
+    }
+}
